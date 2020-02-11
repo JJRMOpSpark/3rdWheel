@@ -16,12 +16,12 @@ const populateCategories = async () => {
       name: 'Restaurants',
       alias: 'restaurants',
     };
-    // const options = {
-    //   name: 'movie',
-    //   alias: 'movie',
-    // };
+    const options = {
+      name: 'movie',
+      alias: 'movie',
+    };
     const categoryArray = await Category.findOrCreate({ where: categoryOptions });
-    // const re = await Category.findOrCreate({ where: options });
+    const re = await Category.findOrCreate({ where: options });
 
     const { id: categoryId } = categoryArray[0];
     const interests = await restCategories();

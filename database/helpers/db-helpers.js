@@ -4,7 +4,7 @@ const restCategories = () => {
   const options = {
     method: 'get',
     url: 'https://api.yelp.com/v3/categories',
-    headers: { 'Authorization': `Bearer ${process.env.YELP_KEY}` },
+    headers: { 'Authorization': `Bearer NvKYKbQMrWoA-t6GjdvKF5BCVYnSYfkAjVcfujslxF2o8LmrHLDQudMMqgyKylzs4m0TCz_wIvO7oQ7wFqqdjaOntDXlEhXjI73b1yM9I3d6CWnhhuP0QhQ2FPVBXnYx` },
   };
 
   return axios(options)
@@ -29,7 +29,7 @@ const fetchRestaurant = async (category, latitude, longitude) => {
     method: 'get',
     url: 'https://api.yelp.com/v3/businesses/search',
     headers: {
-      'Authorization': `Bearer ${process.env.YELP_KEY}`,
+      'Authorization': `Bearer NvKYKbQMrWoA-t6GjdvKF5BCVYnSYfkAjVcfujslxF2o8LmrHLDQudMMqgyKylzs4m0TCz_wIvO7oQ7wFqqdjaOntDXlEhXjI73b1yM9I3d6CWnhhuP0QhQ2FPVBXnYx`,
     },
     params: {
       categories: alias,
@@ -86,7 +86,7 @@ const restDecider = async (filter, latitude, longitude) => {
       method: 'get',
       url: 'https://api.yelp.com/v3/businesses/search',
       headers: {
-        Authorization: `Bearer ${process.env.YELP_KEY}`,
+        Authorization: `Bearer NvKYKbQMrWoA-t6GjdvKF5BCVYnSYfkAjVcfujslxF2o8LmrHLDQudMMqgyKylzs4m0TCz_wIvO7oQ7wFqqdjaOntDXlEhXjI73b1yM9I3d6CWnhhuP0QhQ2FPVBXnYx`,
       },
       params: {
         limit: '5',
