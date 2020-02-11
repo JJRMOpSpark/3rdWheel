@@ -7,7 +7,10 @@ const fetchRestaurants = async (categoriesArray, latitude, longitude) => {
       method: 'get',
       url: 'https://api.yelp.com/v3/businesses/search',
       headers: {
-        'Authorization': `Bearer ${process.env.YELP_KEY}`,
+        'Authorization': `Bearer NvKYKbQMrWoA-t6GjdvKF5BCVYnSYfkAjVcfujslxF2o8LmrHLDQudMMqgyKylzs4m0TCz_wIvO7oQ7wFqqdjaOntDXlEhXjI73b1yM9I3d6CWnhhuP0QhQ2FPVBXnYx
+
+
+`,
       },
       params: {
         limit: '5',
@@ -31,7 +34,10 @@ const fetchSpot = async (apiId) => {
       method: 'get',
       url: `https://api.yelp.com/v3/businesses/${apiId}`,
       headers: {
-        'Authorization': `Bearer ${process.env.YELP_KEY}`,
+        'Authorization': `Bearer NvKYKbQMrWoA-t6GjdvKF5BCVYnSYfkAjVcfujslxF2o8LmrHLDQudMMqgyKylzs4m0TCz_wIvO7oQ7wFqqdjaOntDXlEhXjI73b1yM9I3d6CWnhhuP0QhQ2FPVBXnYx
+
+
+`,
       },
     };
     const response = await axios(options);

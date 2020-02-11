@@ -121,7 +121,7 @@ const HotSpots = (props) => {
       <h3> Hot Spots </h3>
       <h4>Here are the most popular restaurants in your area</h4>
 
-      {
+      {/* {
         hotSpots.map(locale => (
           <Figure>
             <Figure.Caption>
@@ -135,7 +135,7 @@ const HotSpots = (props) => {
             />
           </Figure>
         ))
-      }
+      } */}
     </Container>
   );
 }
